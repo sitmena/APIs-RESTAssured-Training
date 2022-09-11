@@ -2,12 +2,40 @@ package JavaForAPIAutomation;
 
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class LambdaAndStream {
+
+
+
+    @Test
+    public void lamdaExperiment(){
+
+        List<String> colors = Arrays.asList("red", "blue", "grey-blue", "grey", "green", "gritty white");
+
+
+
+        List<String> filteredColors = colors.stream()
+                .filter(color -> color.startsWith("g"))
+                .map(color -> color.toUpperCase())
+                .sorted()
+                .collect(Collectors.toList());
+        System.out.println(filteredColors);
+    }
+
+
+
+
+    public void printingLambd(String subject){
+        System.out.println(subject);
+    }
+
+
+
 
     @Test
     public void printingOutColors(){
@@ -17,6 +45,14 @@ public class LambdaAndStream {
         for (String color: colors){
             printColorOf(color);
         }
+
+
+
+
+
+
+
+
 
         // foreach using Lambda without calling print function, we print directly here
         colors.forEach(color -> System.out.println("Color: "+color));
@@ -72,16 +108,16 @@ public class LambdaAndStream {
 
         Optional<Integer> minLength = colors.stream()
                 .filter(color -> color.startsWith("g"))
-                .map(String::length) // it's the same as this one:  map(color -> color.length())
+                .map(color -> color.length()) // it's the same as this one:  map(color -> color.length()) //.map(String::length)
                 .sorted()
                 .findFirst();
 
         System.out.println(minLength);
 
         // OR I can say
-        minLength.ifPresent(
-                length -> System.out.println(length)
-        );
+//        minLength.ifPresent(
+//                length -> System.out.println(length)
+//        );
 
     }
 
