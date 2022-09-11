@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7d13342-ad24-4e02-8779-621a6917920e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JavaForAPIAutomation/LambdaAndStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JavaForAPIAutomation/LambdaAndStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RESTAssuredPractice/GetAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RESTAssuredPractice/GetAPI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +45,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GetAPI.getAPITest">
+  <component name="RunManager" selected="TestNG.GetMethod.getMethod">
     <configuration name="GetAPI" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API-RESTAssured-Training" />
       <extension name="coverage">
@@ -82,17 +81,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaAndStream.findingMinLength" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetComplexAPI.getComplexAPITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API-RESTAssured-Training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaForAPIAutomation.*" />
+          <option name="PATTERN" value="RESTAssuredPractice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="JavaForAPIAutomation" />
-      <option name="MAIN_CLASS_NAME" value="JavaForAPIAutomation.LambdaAndStream" />
-      <option name="METHOD_NAME" value="findingMinLength" />
+      <option name="PACKAGE_NAME" value="RESTAssuredPractice" />
+      <option name="MAIN_CLASS_NAME" value="RESTAssuredPractice.GetComplexAPI" />
+      <option name="METHOD_NAME" value="getComplexAPITest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,35 +99,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambdaAndStream.findingShortestColor" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API-RESTAssured-Training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaForAPIAutomation.*" />
+          <option name="PATTERN" value="RESTAssuredPractice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="JavaForAPIAutomation" />
-      <option name="MAIN_CLASS_NAME" value="JavaForAPIAutomation.LambdaAndStream" />
-      <option name="METHOD_NAME" value="findingShortestColor" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="RESTAssuredPractice" />
+      <option name="MAIN_CLASS_NAME" value="RESTAssuredPractice.GetMethod" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Miscellaneous.regex2" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetMethod.getMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="API-RESTAssured-Training" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JavaForAPIAutomation.*" />
+          <option name="PATTERN" value="RESTAssuredPractice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="JavaForAPIAutomation" />
-      <option name="MAIN_CLASS_NAME" value="JavaForAPIAutomation.Miscellaneous" />
-      <option name="METHOD_NAME" value="regex2" />
+      <option name="PACKAGE_NAME" value="RESTAssuredPractice" />
+      <option name="MAIN_CLASS_NAME" value="RESTAssuredPractice.GetMethod" />
+      <option name="METHOD_NAME" value="getMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GetMethod.getMethod" />
+        <item itemvalue="TestNG.GetMethod" />
+        <item itemvalue="TestNG.GetComplexAPI.getComplexAPITest" />
         <item itemvalue="TestNG.GetAPI.getAPITest" />
         <item itemvalue="TestNG.GetAPI" />
-        <item itemvalue="TestNG.Miscellaneous.regex2" />
-        <item itemvalue="TestNG.LambdaAndStream.findingShortestColor" />
-        <item itemvalue="TestNG.LambdaAndStream.findingMinLength" />
       </list>
     </recent_temporary>
   </component>

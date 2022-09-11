@@ -2,8 +2,12 @@ package RESTAssuredPractice;
 
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
+
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.http.Method;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.Assert;
@@ -22,7 +26,7 @@ public class GetAPI {
         baseURI = "http://localhost:3000";
 
 
-        // 1- Get Method
+
         Response response =
                 given()
 //                        .header("id", 10)
@@ -41,6 +45,22 @@ public class GetAPI {
         String responeContent = response.jsonPath().prettify();
 
         System.out.println("Response is:\n"+responeContent);
+
+
+       // String specifcValue = response.jsonPath().get()
+
+
+
+        ////////// Another way of sending the request (Not recommended way) //////////
+        /*
+        // Request Object
+      RequestSpecification httpRequest = RestAssured.given();
+      // Response Object
+       Response response = httpRequest.request(Method.GET, "/persons");
+         */
+
+
+        // Assertion goes here
 
     }
 
