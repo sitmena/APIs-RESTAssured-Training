@@ -77,9 +77,10 @@ public class GetMethod {
 
         Assert.assertTrue(statusCode == 201, "Status code is not 201");
         String lastName = response.jsonPath().get("lastName").toString();
+        System.out.println("lastName value is:"+ lastName);
         //Assert.assertTrue(lastName.equals("Basic"), "Last name does not match expected!");
 
-        Assert.assertEquals(lastName, "Basic", "Last name is not assertion!");
+        Assert.assertEquals(lastName, "hjkhjk", "Last name is not assertion!");
 
     }
 }
